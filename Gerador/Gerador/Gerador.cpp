@@ -6,7 +6,6 @@
 #include <stdlib.h>
 using namespace std;
 
-
 void areaPlana(float altura, float comprimento,char* filename){
 	ofstream file;
 	file.open(filename, ios::ate);
@@ -169,7 +168,7 @@ void esfera(float raio, int fatias, int camadas, char* filename){
 int main(int argc, char **argv) {
 	
 	//superficie plana
-	if ((strcmp(argv[1], "superficieplana") == 0) && argc == 5){
+	if ((strcmp(argv[1], "plane") == 0) && argc == 5){
 		areaPlana(atof(argv[2]), atof(argv[3]), argv[4]);
 		printf("Ficheiro criado com sucesso.");
 		return 0;
@@ -180,7 +179,7 @@ int main(int argc, char **argv) {
 	}*/
 	
 	//paralelipipedo
-	if ((strcmp(argv[1], "paralelipipedo") == 0) && argc == 6){
+	if ((strcmp(argv[1], "box") == 0) && argc == 6){
 		paralelipipedo(atof(argv[2]), atof(argv[3]), atof(argv[4]),argv[5]);
 		printf("Ficheiro criado com sucesso.");
 		return 0;
@@ -202,7 +201,7 @@ int main(int argc, char **argv) {
 	}*/
 
 	//esfera
-	if ((strcmp(argv[1], "esfera") == 0) && argc == 6 ){
+	if ((strcmp(argv[1], "sphere") == 0) && argc == 6 ){
 		esfera(atof(argv[2]),atoi(argv[3]), atoi(argv[4]),argv[5]);
 		printf("Ficheiro criado com sucesso.");
 		return 0;
