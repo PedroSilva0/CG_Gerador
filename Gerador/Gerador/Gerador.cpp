@@ -1,4 +1,4 @@
-#define _USE_MATH_DEFINES
+#define _USE_MATH_DEFINES   //vhjbnvbnvbnm
 #include <iostream>
 #include <fstream>
 #include <math.h>
